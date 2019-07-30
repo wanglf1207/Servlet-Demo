@@ -4,6 +4,6 @@
 ## Servlet-HelloWorld
 * 新建Module右键项目—New—Module—Java—Web Application
 
-* 添加servlet-api，右键Module—Open Module Settings—Libraries—Java，选择本地servletjar包即可
+* 添加servlet-api，右键Module—Open Module Settings—Libraries—Java，选择本地Servlet jar包即可
 
-* IntelliJ IDEA 配置tomcat,
+* IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上角+
