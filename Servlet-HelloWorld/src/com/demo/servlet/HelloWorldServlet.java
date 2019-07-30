@@ -14,13 +14,9 @@ public class HelloWorldServlet extends HttpServlet {
     public void init() throws ServletException {
         message = "Hello Servlet";
     }
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.write("<h1>" + message + "</h1>");
