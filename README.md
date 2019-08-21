@@ -15,6 +15,8 @@
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module01.png)
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module02.png)
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module03.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module04.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module05.png)
 ![我是图片](./Servlet-Hello/src/main/resources/images/project.png)
 ## 源码
 ```java
