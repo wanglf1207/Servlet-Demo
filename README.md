@@ -6,16 +6,26 @@
 ## 创建项目
 * 首先新建一个空的Maven项目Servlet-Demo，具体的子项目全部以Module形式存在
 
-* 新建Module,右键项目—New—Module—Java—Web Application
+* 新建Module,右键项目—New—Module—Maven—maven-archetype-webapp,点击Nest
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module01.png)
 
-* 添加servlet-api，右键Module—Open Module Settings—Libraries—Java，选择本地Servlet jar包即可
+* 输入arrifactId，点击Next
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module02.png)
+
+
+* 输入Module name,点击Next
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module03.png)
+
+* File——Project Structure——Modules,选择Servlet-Hello这个Module，在main目录下新建java目录
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module04.png)
+
 
 * IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上角+
 
-![我是图片](./Servlet-Hello/src/main/resources/images/create-module01.png)
-![我是图片](./Servlet-Hello/src/main/resources/images/create-module02.png)
-![我是图片](./Servlet-Hello/src/main/resources/images/create-module03.png)
-![我是图片](./Servlet-Hello/src/main/resources/images/create-module04.png)
+
+
+
+
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module05.png)
 ![我是图片](./Servlet-Hello/src/main/resources/images/project.png)
 ## 源码
