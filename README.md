@@ -72,12 +72,11 @@ public class HelloWorldServlet extends HttpServlet {
 好了，完成以上的步骤开发工作就完成了，要想运行起来需要配置一下Web服务器，本文使用tomcat
 
 
-配置tomcat
+* 配置tomcat
 IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上角+
-* ![我是图片](./Servlet-Hello/src/main/resources/images/add-tomcat.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/add-tomcat.png)
 
-## 验证方法
-在浏览器中输入如下路径，如果""HelloWorld字样则说明成功"
+* tomcat配置成功之后将项目部署到tomcat中，在浏览器中输入如下路径，如果""HelloWorld字样则说明成功"
 ```text
 http://localhost:8080/hello/
 ```
