@@ -2,17 +2,20 @@
 
 下面就让我们开始吧!
 # Servlet-Hello
-首先新建一个空的Maven项目Servlet-Demo，具体的子项目全部以module形式存在。
 
-## 配置
-* 新建Module右键项目—New—Module—Java—Web Application
+## 创建项目
+* 首先新建一个空的Maven项目Servlet-Demo，具体的子项目全部以Module形式存在
+
+* 新建Module,右键项目—New—Module—Java—Web Application
 
 * 添加servlet-api，右键Module—Open Module Settings—Libraries—Java，选择本地Servlet jar包即可
 
 * IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上角+
 
-
-![我是图片](./Servlet-Hello/src/main/resources/images/hello.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module01.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module02.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/create-module03.png)
+![我是图片](./Servlet-Hello/src/main/resources/images/project.png)
 ## 源码
 ```java
 
