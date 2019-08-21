@@ -12,6 +12,7 @@ public class HelloWorldServlet extends HttpServlet {
 
     public void init()  {
         message = "Hello Servlet";
+        System.out.println(message);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
