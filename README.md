@@ -16,19 +16,30 @@
 * 输入Module name,点击Next
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module03.png)
 
-* File——Project Structure——Modules,选择Servlet-Hello这个Module，在main目录下新建java目录
+* File—Project Structure—Modules,选择Servlet-Hello这个Module，在main目录下新建java目录,并标记为source
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module04.png)
 
-
-* IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上角+
-
-
-
-
-
+* 继续在main目录下新建resources目录，标记为resources
 ![我是图片](./Servlet-Hello/src/main/resources/images/create-module05.png)
+
+* 然后点击OK，项目就建好了，类似于下面这样：
 ![我是图片](./Servlet-Hello/src/main/resources/images/project.png)
-## 源码
+
+* 编写Servlet程序需要用到Servlet api,将依赖的jar包通过Maven方式配置
+
+```xml
+
+<dependencies>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+```
+
+* 创建HelloWorldServlet，继承HttpServlet类并实现doGet方法
 ```java
 
 public class HelloWorldServlet extends HttpServlet {
@@ -42,7 +53,7 @@ public class HelloWorldServlet extends HttpServlet {
 }
 ```
 
-xml配置内容如下：
+* xml配置内容如下
 ```xml
 
 <web-app>
@@ -58,6 +69,12 @@ xml配置内容如下：
   </servlet-mapping>
 </web-app>
 ```
+好了，完成以上的步骤开发工作就完成了，要想运行起来需要配置一下Web服务器，本文使用tomcat
+
+
+配置tomcat
+IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上角+
+* ![我是图片](./Servlet-Hello/src/main/resources/images/add-tomcat.png)
 
 ## 验证方法
 在浏览器中输入如下路径，如果""HelloWorld字样则说明成功"
