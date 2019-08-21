@@ -10,36 +10,36 @@
 
 ## 源码
 ```java
+
 public class HelloWorldServlet extends HttpServlet {
-
-    public String message;
-
-    public void init()  {
-        message = "Hello Servlet";
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.write("<h1>" + message + "</h1>");
+        out.write("<h1>" + "Hello Servlet" + "</h1>");
     }
 }
 ```
 
 ```xml
 
-<servlet>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <servlet-class>com.demo.servlet.HelloWorldServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <url-pattern>/HelloWorldServlet</url-pattern>
-    </servlet-mapping>
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <servlet-class>com.demo.servlet.HelloWorldServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <url-pattern>/HelloWorldServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
 ```
 
 ## 验证方法
+在浏览器中输入如下路径，如果""HelloWorld字样则说明成功"
 ```text
 http://localhost:8080/hello/
 ```
