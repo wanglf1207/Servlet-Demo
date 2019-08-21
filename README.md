@@ -1,3 +1,6 @@
+我于是2009年进入IT这个行业，从学习Java语言开始，然后学习了Servlet,JSP,JavaBean技术，在那个时候很多项目都是用Servlet、JSP、JavaBean做的，进款那时候各种框架已经存在了，后来学习了Spring、Struts2，Hibernate等框架。
+当SpringMVC之后，用的人越来越多。但是它的基础其实还是Servlet，深入学习Servlet对web开发非常重要，所以本次我将Servlet的知识点梳理一下，深入的把servlet原理以及tomcat的原理做一个总结。
+
 # Servlet-Hello
 首先新建一个空的Maven项目Servlet-Demo，具体的子项目全部以module形式存在。
 
@@ -22,6 +25,7 @@ public class HelloWorldServlet extends HttpServlet {
 }
 ```
 
+xml配置内容如下：
 ```xml
 
 <web-app>
