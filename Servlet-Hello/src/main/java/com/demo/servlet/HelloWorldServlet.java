@@ -8,17 +8,10 @@ import java.io.PrintWriter;
 
 public class HelloWorldServlet extends HttpServlet {
 
-    public String message;
-
-    public void init()  {
-        message = "Hello Servlet";
-        System.out.println(message);
-    }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.write("<h1>" + message + "</h1>");
+        out.write("<h1>" + "Hello Servlet" + "</h1>");
     }
 }

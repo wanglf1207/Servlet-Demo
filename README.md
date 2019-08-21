@@ -1,4 +1,4 @@
-# Servlet-Demo
+# Servlet-Hello
 首先新建一个空的Maven项目Servlet-Demo，具体的子项目全部以module形式存在。
 
 ## 配置
@@ -37,4 +37,9 @@ public class HelloWorldServlet extends HttpServlet {
         <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/HelloWorldServlet</url-pattern>
     </servlet-mapping>
+```
+
+## 验证方法
+```text
+http://localhost:8080/hello/
 ```
