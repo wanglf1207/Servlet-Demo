@@ -82,3 +82,51 @@ http://localhost:8080/hello/
 ```
 
 好了，大功告成，今天就到这里吧，背单词去。
+
+# InitMethod
+
+创建InitMethodServlet，并编写init方法和doGet方法
+
+```java
+public class InitMethodServlet extends HttpServlet {
+
+    @Override
+    public void init() throws ServletException {
+        System.out.println("init method.......");
+    }
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
+}
+```
+
+在xml中配置InitMethodServlet
+```xml
+<servlet>
+    <servlet-name>InitMethodServlet</servlet-name>
+    <servlet-class>com.anthony.servlet.demo.InitMethodServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitMethodServlet</servlet-name>
+    <url-pattern>/InitMethodServlet</url-pattern>
+  </servlet-mapping>
+```
+
+根据以上配置，我们直接启动tomcat，发现servlet并没有被实例化，也就是说控制台上没有打印出"init method......."。
+如果想让tomcat启动时实例化该servlet，可以通过load-on-startup标签实现。
+
+```xml
+<servlet>
+    <servlet-name>InitMethodServlet</servlet-name>
+    <servlet-class>com.anthony.servlet.demo.InitMethodServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitMethodServlet</servlet-name>
+    <url-pattern>/InitMethodServlet</url-pattern>
+  </servlet-mapping>
+```
+
+
+

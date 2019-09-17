@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>InitMethodServlet</servlet-name>
+    <servlet-class>com.anthony.servlet.demo.InitMethodServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitMethodServlet</servlet-name>
+    <url-pattern>/InitMethodServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
