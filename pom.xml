@@ -12,6 +12,7 @@
     <modules>
         <module>Servlet-Hello</module>
         <module>Servlet-Listener</module>
+        <module>Servlet-InitMethod</module>
     </modules>
 
 
