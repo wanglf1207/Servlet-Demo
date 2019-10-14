@@ -77,6 +77,7 @@ IntelliJ IDEA 配置tomcat:Run—Edit Configurations 选中tomcat 点击左上�
 ![我是图片](./Servlet-Hello/src/main/resources/images/add-tomcat.png)
 
 * tomcat配置成功之后将项目部署到tomcat中，在浏览器中输入如下路径，如果""HelloWorld字样则说明成功"
+
 ```text
 http://localhost:8080/hello/
 ```
