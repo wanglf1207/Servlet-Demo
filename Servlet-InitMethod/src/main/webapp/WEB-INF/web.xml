@@ -8,6 +8,7 @@
   <servlet>
     <servlet-name>InitMethodServlet</servlet-name>
     <servlet-class>com.anthony.servlet.demo.InitMethodServlet</servlet-class>
+    <!--值越小，优先级越高-->
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
