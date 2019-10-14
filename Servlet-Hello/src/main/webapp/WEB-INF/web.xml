@@ -13,4 +13,13 @@
     <servlet-name>HelloWorldServlet</servlet-name>
     <url-pattern>/HelloWorldServlet</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DoPost</servlet-name>
+    <servlet-class>com.demo.servlet.dopost.DoPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoPost</servlet-name>
+    <url-pattern>/DoPost</url-pattern>
+  </servlet-mapping>
 </web-app>

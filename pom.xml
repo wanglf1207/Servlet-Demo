@@ -15,7 +15,6 @@
         <module>Servlet-InitMethod</module>
     </modules>
 
-
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
