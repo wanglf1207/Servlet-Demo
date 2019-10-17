@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 public class DoPostServlet  extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
+        String username = request.getParameter("username");
+        System.out.println(username + "ssssssssssssss");
 
-        //String username = request.getParameter("username");
-       // System.out.println(username + "ssssssssssssss");
-
-        String username1 = (String)request.getAttribute("username");
-        System.out.println(username1);
+        request.setAttribute("gender","male");
+        String gender = (String)request.getAttribute("gender");
+        System.out.println("my favorite is : " + gender);
     }
 }
